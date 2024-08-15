@@ -26,7 +26,7 @@ This repository contains several key documents that provide detailed insights in
 
 2. **R Markdown File (RMD)**
    - The R Markdown file contains the complete code and analysis conducted for this study. It provides step-by-step details on data processing, statistical tests, and results. Users interested in the technical aspects and reproducibility of the study should explore this file.
-   - **[Explore the R Markdown File](path-to-your-rmd-file)**
+   - **[Explore the R Markdown File](https://github.com/shijianfei1413/The-Effect-of-Free-Trials-and-Promotions-on-Gym-Membership-Renewal/blob/dadf5db0bfe7fe97239cd37a31683b9385d05f68/Final-Project-The%20Effect%20of%20Free%20Trials%20and%20Promotions%20on%20the%20Gym%20Membership.Rmd)**
 
 3. **HTML Report**
    - The HTML report is a rendered version of the R Markdown file, offering a more accessible format for those who prefer to read the analysis and results without running the code. It includes all the graphs, tables, and insights generated during the study.
