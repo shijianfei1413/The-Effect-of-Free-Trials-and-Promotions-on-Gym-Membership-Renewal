@@ -30,7 +30,7 @@ This repository contains several key documents that provide detailed insights in
 
 3. **HTML Report**
    - The HTML report is a rendered version of the R Markdown file, offering a more accessible format for those who prefer to read the analysis and results without running the code. It includes all the graphs, tables, and insights generated during the study.
-   - **[Read the HTML Report](path-to-your-html-file)**
+   - **[Read the HTML Report](https://github.com/shijianfei1413/The-Effect-of-Free-Trials-and-Promotions-on-Gym-Membership-Renewal/blob/65fe163cb622e024789e67a480d010cca06bc707/Final-Project-The-Effect-of-Free-Trials-and-Promotions-on-the-Gym-Membership.html)**
 
 ## Authors
 Jianfei Shi, Xuan Song, Yiqi Wang, Yisong Wang, Jack Zhang
