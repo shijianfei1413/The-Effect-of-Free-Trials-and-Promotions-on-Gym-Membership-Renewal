@@ -1,0 +1,683 @@
+---
+title: "Would the effect of free trials on membership and promotions on training sessions generate a 15% increase on the proportion of gym membership renewal?"
+author:  "Sterben Shi, Xuan Song, Yiqi Wang, Yisong Wang, Jack Zhang"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment="", warning = FALSE, message = FALSE, tidy.opts=list(width.cutoff=55), tidy = TRUE)
+
+# Make sure to change the name of the file to something more descriptive for your project.
+```
+
+## Part 1:  Research Proposal
+
+### Executive Summary / Abstract
+
+**Authors (Yisong Wang -100%)**: 
+
+The present research project aims to investigate the factors affecting gym attendance and membership retention while exploring strategies to promote long-term commitment to exercise. As a considerable portion of the population leads sedentary lifestyles, marked by minimal physical activity, there is a pressing need to encourage regular gym attendance to combat health complications such as obesity, heart disease, and chronic conditions. 
+
+Furthermore, exercise plays a vital role in enhancing mental well-being by alleviating anxiety, depression, and improving cognitive function and mood. Gyms often face challenges in retaining members due to a variety of factors, including membership costs, lack of motivation, or dissatisfaction with facilities and services. These challenges lead to revenue decline and adverse impacts on the gym's reputation. One potential solution to address this issue is the implementation of free trial periods for new members, allowing them to experience gym facilities and services without long-term commitment. However, converting trial members into long-term, paying members remains a significant challenge. Our research project will delve into methods for promoting the significance of gym attendance for both physical and mental health while addressing the barriers to gym membership and attendance. By exploring these aspects, we aim to assist gyms in attracting and retaining a larger membership base and helping more individuals benefit from the advantages of regular exercise. Ultimately, this project strives to identify effective strategies to increase long-term gym membership retention rates, contributing to improved overall public health and well-being.
+
+
+
+
+### Statement of the Problem
+
+**Authors (Yisong Wang-100%)**: 
+
+It is indisputable that there are myriad reasons why people may regard gym attendance as superfluous, primarily viewing it as a means to enhance physical appearance. Nonetheless, it is of paramount importance to acknowledge that a considerable segment of the population leads a predominantly sedentary lifestyle, marked by insufficient physical activity. This lack of movement can give rise to a multitude of health complications, encompassing obesity, heart disease, and an assortment of chronic conditions. In response to this issue, gym attendance presents a pragmatic and readily accessible solution by supplying a space for consistent physical activity and exercise. In addition to its impact on physical health, exercise also exerts a positive influence on mental well-being, mitigating symptoms of anxiety and depression, bolstering cognitive function, and fostering an improved mood. Regrettably, a significant number of individuals fail to prioritize gym attendance, which may be attributed to motivational deficits or a scarcity of resources.
+
+Moreover, gyms often grapple with the challenge of maintaining membership numbers due to a variety of factors, including prohibitive membership fees, a lack of motivation, or dissatisfaction with the facilities and services on offer. These elements can lead to diminishing revenue and have a detrimental effect on the gym's overall reputation. One potential strategy to counteract this problem is to provide new members with a complimentary trial period, allowing them to explore the gym's facilities and services without the need for a long-term commitment. This tactic has the potential to draw in a larger membership base and subsequently elevate revenue. Nevertheless, the primary obstacle lies in successfully converting these trial members into loyal, paying patrons. Many individuals who participate in trial memberships may not recognize the inherent value in prolonging their gym membership and could opt not to renew once the trial period has elapsed. As a result, it is crucial to emphasize the importance of regular gym attendance for fostering both physical and mental health, as well as addressing the barriers that hinder gym membership and consistent attendance. By tackling these issues, a greater number of individuals can enjoy the advantages of habitual exercise. Our project is dedicated to investigating strategies that will effectively enhance long-term gym membership retention rates.
+
+
+### Literature Review
+
+**Authors (Sterben Shi-100%)**: 
+
+For research question 1:
+Many places in the world are carrying out physical exercise programs to address health concerns and encourage sports. A Canada program called Canada’s Prescription to Get Active allows patients of physicians a 30-day free trial of fitness facility (Mintel Observation Exercise Prescribed, 2023). The measure aims not only to benefit physical health as routines, but also to offer potential mental care for anxiety and depression. The fundamental meaning of exercise has evolved beyond maintaining physical well-being; as shown below, the secondary assets of exercise, such as improving quality of sleep and overall energy boost, have earned the interest of consumers these days.
+
+
+Source: “What are your top three health priorities right now? – GRID Please select and rank up to three in order of importance, with 1 being the most important.” 
+
+Another great example conducted by academic research is that happiness level can also significantly increase when people possess fitness center memberships (Demirel, Mehmet, 2019). It incentivizes us to provide a great opportunity for both gym consumers and fitness centers. According to the results of the regression analysis, leisure involvement levels of the participants were found to be a meaningful predictor of their happiness levels. The study found that 14% of the total variance regarding happiness levels can be explained by leisure involvement levels.
+
+An academic article posted on Journal of Economy revealed positive effects of “rebates” on fitness center memberships; it discussed how the reimbursements affect gym memberships on campus and the overall influence of policy on healthy habits of students. (Tatiana, Barton, Alexander, 2019). a gym membership reimbursement program with a 50-visit attendance threshold significantly increased gym attendance and improved habit formation among participants. Specifically, the program led to an increase in gym visits by 0.14 visits per week and a 0.08 standard deviation increase in the number of weeks with at least one gym visit. These effects were particularly strong for individuals who had lower initial levels of gym attendance.
+
+Also, a field experiment of gym attendance associated with financial incentives provided a handful of insights across quarters in a year. The key findings of the experiment were that financial incentives can increase gym attendance in the short term, but not necessarily in the long term. Additionally, offering a second round of incentives did not have a significant impact on attendance. However, the study had limitations due to a high number of subscription cancellations and lower statistical power than expected. Therefore, non-significant results should be interpreted with care.(Kirsten, Willem, 2017)
+
+For research question 2:
+Gym attendance can be proved to improve mental health significantly. The free gym sessions offered by The Gym branches can help nurses overcome perceived barriers to keeping fit and maintaining their health. Cardiology nurse Fay Sabini, who uses the gym, said: ‘The job can be busy and pressurized, so a visit to the gym helps me to get rid of that excess energy and unwind after a long day."(Nurse World, 2015)
+
+Providing free access to leisure facilities and community outreach can have a positive impact on physical activity levels, particularly among disadvantaged groups. The study found that the introduction of this scheme led to an increase in swimming and gym attendances at these facilities, an increased proportion of the population participating in swimming or gym activity and increased overall physical activity levels. The increases in participation were greatest in the most disadvantaged socioeconomic group—decreasing inequalities.(Higgerson J, 2018)
+
+The cross-sectional study found that the Gym for Free scheme was successful in increasing the uptake of exercise facilities among study participants from 25% to 64% either every day or most days, and a reduction among those who never used these facilities from 28% to 0%. This was particularly the case among women and the most economically disadvantaged. The scheme also widened participation among an ethnically diverse population, particularly for women from Pakistani and African-Caribbean ethnic backgrounds.(Rabiee, F, 2015)
+
+Machine learning algorithms can be used to predict the situation of membership and member dropout in fitness centers by identifying member profiles, which can then be used to inform management policies designed to increase the profitability of these centers. By identifying the profile of those individuals at the highest risk of dropout, fitness centers can take steps to prevent them from leaving and increase their retention rates. (Pablo, 2021)
+
+
+### Research Questions, Hypotheses, and Effects
+**Authors (Yisong Wang -100%)**: 
+
+1) In this project, our goal is to find out how bonus renewal offers can affect users’ decisions on specific plans. Our research question is that will a 14-month membership renewal increase the proportion of membership renewals within one month compared to a 12-month membership renewal offer at the same price?
+
+The object we seek to accomplish is to assess the impact of offering bonus renewal offers on users' decisions regarding specific membership plans. In particular, we aim to investigate whether providing a 14-month membership renewal at the same price as a 12-month membership renewal would lead to an increased rate of membership renewals within one month compared to only offering a 12-month membership renewal at the same price. Our research questions include: Relative to a 12-month membership renewal offer at the same price, would a 14-month membership renewal offer at the same price increase the proportion of membership renewals within one month? To address this research question, we will compare two distinct membership renewal offers as independent variables: one including a 12-month renewal at a fixed price (control group) and another with a 14-month renewal at the same price (treatment group). Our dependent variable will be the proportion of membership renewals within one month. 
+
+ We put forth the following hypotheses: Null Hypothesis (H0): The proportion of membership renewals within one month in the group offered a 14-month renewal at the same price as a 12-month renewal is equal to or less than the proportion of membership renewals in the group offered a 12-month renewal at the same price. Alternative Hypothesis (H1): The proportion of membership renewals within one month in the group offered a 14-month renewal at the same price as a 12-month renewal is greater than the proportion of membership renewals in the group offered a 12-month renewal at the same price. By exploring these research questions and hypotheses, we aim to determine the effects of different bonus renewal offers on gym membership renewal rates. This evaluation will enable us to better comprehend customer preferences and tailor gym membership benefits and incentives more effectively to encourage long-term commitment to fitness and overall well-being.
+
+2) Relative to 3 free sessions with professional trainers offered by the gym within one year, would 5 free sessions with professional trainers offered by the gym within one year increase the proportion of membership renewals?
+
+Furthermore, an additional objective we seek to accomplish is to assess the impact of varying the number of complimentary sessions with professional trainers on the proportion of gym membership renewals within a one-year period. In particular, we aim to investigate whether offering five free sessions with professional trainers over a 12-month duration would lead to an increased rate of membership renewals in comparison to offering three free sessions within the same time frame. Our research question includes: Relative to three free sessions with professional trainers offered by the gym within one year, would five free sessions with professional trainers offered by the gym within one year increase the proportion of membership renewals? 
+
+To address these research questions, we will compare two distinct professional training session offerings as independent variables: one including three free sessions within a 12-month period (control group) and another with five free sessions within a 12-month period (treatment group). Our dependent variable will be the proportion of membership renewals. We put forth the following hypotheses: Null Hypothesis (H0): The proportion of membership renewals in the group offered five free sessions with professional trainers within one year is equal to or less than the proportion of membership renewals in the group offered three free sessions within the same time frame. Alternative Hypothesis (H1): The proportion of membership renewals in the group offered five free sessions with professional trainers within one year is greater than the proportion of membership renewals in the group offered three free sessions within the same time frame. By exploring these research questions and hypotheses, we aim to determine the effects of different professional training session offerings on gym membership renewal rates. This evaluation will enable us to better comprehend customer preferences and tailor gym membership benefits and incentives more effectively to encourage long-term commitment to fitness and overall well-being.
+
+3) Relative to no free sessions with professional trainers offered by the gym within one year, would 3 free sessions with professional trainers offered by the gym within one year increase the proportion of membership renewals? 
+
+Furthermore, an additional objective we seek to accomplish is to assess the impact of varying the number of complimentary sessions with professional trainers on the proportion of gym membership renewals within a one-year period. In particular, we aim to investigate whether offering three free sessions with professional trainers over a 12-month duration would lead to an increased rate of membership renewals in comparison to offering no free sessions within the same time frame.  Our research question includes: Relative to no free sessions with professional trainers offered by the gym within one year, would three free sessions with professional trainers offered by the gym within one year increase the proportion of membership renewals? 
+
+To address these research questions, we will compare two distinct professional training session offerings as independent variables: one including no free sessions within a 12-month period (control group) and another with three free sessions within a 12-month period (treatment group). Our dependent variable will be the proportion of membership renewals. We put forth the following hypotheses: Null Hypothesis (H0): The proportion of membership renewals in the group offered three free sessions with professional trainers within one year is equal to or less than the proportion of membership renewals in the group offered no free sessions within the same time frame. Alternative Hypothesis (H1): The proportion of membership renewals in the group offered three free sessions with professional trainers within one year is greater than the proportion of membership renewals in the group offered no free sessions within the same time frame. By exploring these research questions and hypotheses, we aim to determine the effects of different professional training session offerings on gym membership renewal rates. This evaluation will enable us to better comprehend customer preferences and tailor gym membership benefits and incentives more effectively to encourage long-term commitment to fitness and overall well-being.
+
+
+
+### Importance of the Study and Social Impact
+
+**Authors (Sterben Shi-100%)**: 
+
+Research Question 1:
+The importance of this study lies in its potential to enhance membership retention and customer satisfaction for gyms and fitness centers offering membership-based services. Investigating the impact of a 14-month membership renewal compared to a 12-month renewal at the same price will provide valuable insights for gyms and fitness centers to optimize their strategies and ensure financial stability. The findings may also help gyms and fitness centers tailor their services and promotional strategies to better meet the needs and expectations of their members.
+
+The potential social impact of this research is significant, as it can benefit various gyms and fitness centers and their members across a wide range of industries. By providing evidence-based recommendations for membership renewal policies, gyms and fitness centers can optimize their services to contribute to the overall well-being and enrichment of their communities. This study could lead to meaningful improvements in the quality of life for members and promote sustainable growth for gyms and fitness centers by fostering customer loyalty and retaining steady increases in revenue.
+
+Research Question 2 & 3:
+The importance of this study indicates potential impact on the gyms and fitness centers' customer retention, which will lead to overall profitability. By examining whether increasing the number of free sessions with professional trainers from 3 to 5 within a year can lead to a higher proportion of membership renewals, the study aims to determine the most effective approach to enhance customer satisfaction and loyalty. The insights gained from this research will enable the leadership to make informed decisions about resource allocation, marketing strategies, and the overall value proposition of their services. Ultimately, the study will provide valuable data to support the gyms and fitness centers in its pursuit of long-term growth and success.
+
+In addition to its organizational benefits, this research has the potential to create positive social impact by promoting a healthier and more active lifestyle among gym members and the wider community. By identifying the most effective strategies to retain and engage gym members, the study will contribute to a better understanding of the key factors that encourage individuals to maintain a regular exercise routine, leading to improved physical and mental well-being. The evidence generated from this study could be used by other fitness centers and organizations to implement similar initiatives, leading to a more health-conscious society. Furthermore, this research may inspire local governments or community organizations to invest in similar programs, fostering meaningful and sustainable improvements in public health and well-being.
+
+
+### Research Plan
+
+**Authors (Names and Percentages)**: 
+(Xuan Song, Jack Zhang and Yiqi Wang-see below subsections for percentages)
+
+
+#### Population of Interest 
+
+**Authors (Jack Zhang-100%)**: 
+
+For the first research question regarding the membership renewal promotions, the authors plan to recruit adult males and females who are the existing customers and are already members of a national brand gym, whose memberships are about to expire in the next three months. Therefore, the population of interest would be all the qualifying gym members with the imminent need of membership renewal. 
+
+For the first research question, the focus of the strategy is to devise a randomized, controlled experiment to find out whether the promotions offered in the treatment group (with a 14-month membership renewal) has a more meaningful and significant effect than the regular gym membership renewal offered in the control group (a 12-month membership renewal). In order to ensure the control and treatment groups are reasonably balanced and reduce the possibility of other effects, the authors will implement the first research study in a national brand gym in two separate geographic locations, each of which will have a local branch in its metropolitan area, and the members in the same local gym will be placed in the same group (either treatment or control). As such, the effect of the membership renewal promotions on the proportion of the renewal will be isolated to the greatest extent possible. Reasonably speaking, most of the gym members only go to the gym branch at the nearest convenience location, so the members in the control group are not likely to find out about the promotions being offered to other members in other cities.
+
+Likewise, a randomized, controlled experiment should be conducted for research question 2 and research question 3 (concerning the promotions on training sessions). This process is repeatable and can be performed numerous times to obtain useful data for the gym. Similarly, the authors will implement the research in a gym’s local branch in two separate geographic locations for the second research study and two separate geographic locations for the third research study. Therefore, a total of six gym branches from six different metropolitan areas will be selected. 
+
+The population of interest has been clearly defined, there will not be any exclusion criteria except for the members whose memberships will not end within the next 3 months. In other words, all the current members whose memberships will expire in the next three months are qualified for the study. There is no need to fix an age range or divide the customers into subgroups such as education, income, etc. since the randomized experimental comparison will be available. 
+
+
+
+#### Sample Selection
+
+**Authors (Jack Zhang-100%)**: 
+
+The sampled facilities (gym local branches) for this study will be randomly assigned, and the sample will be randomly drawn within each group. A randomly drawn sample within either the treatment group or the control group will be a reasonably good representative of the population, and the individuals in the same gym locations will be drawn at random from their respective groups, all with an equal chance of selection. 
+
+First, we will select the gym branch locations and randomly assign them into treatment and control groups for the three research studies, with 1) being the treatment group for the first research question, 2) being the control group for the first research question, 3) being the treatment group for the second research question, 4) being the control group for the second research question, 5) being the treatment group for the third research question, and 6) being the control group for the third research question. Since the selection is based on the gym branches of the same national-brand gym and the only difference among the branches is the geographical location, the control and treatment groups would be fairly balanced, and the effect of promotions could be measured across the local gyms in different metropolitan areas. It will be an actionable strategy from the gym’s standpoint, making it easier to contact the members and send them their respective membership promotions and renewal offers. The gym can evaluate the outcomes and determine whether the effect will be sizable enough to justify the change in strategy and whether the results can be realized when the new strategy is adopted. 
+
+Second, before drawing the sample for the research study, we will need to apply the exclusion criteria and reduce the study’s possible population down to the selected population. The steps will be taken by examining the personal information data of all the members, then only selecting those whose memberships will expire in the next three months. 
+
+Next, the qualifying participants will then be drawn randomly from the selected population pool in their respective groups, and recruited via email and asked about the opportunity to renew their memberships, and the participants whose home addresses are nearby the same gym branch will be given the same type of renewal offer. This way the possibility of the participants discussing among themselves and finding out about the different promotions offered to other gym members will be reduced as much as possible. So the selected sampling methodology is sensible for studying this problem given the constraints mentioned above. 
+
+#### Operational Procedures
+
+**Authors (Xuan Song-100%)**: 
+
+In order to conduct the experimental study, we will select gym branches located in the downtown areas of six major cities: New York, Los Angeles, Chicago, Houston, Philadelphia, and San Francisco. This selection ensures that participants share similar lifestyles and income levels, allowing for more reliable comparisons across groups.
+
+To recruit subjects for the study, we will leverage the gym's membership database to identify members whose memberships are due to expire within the next three months. We will then contact these members via email, informing them about the study and requesting their voluntary participation. Informed consent will be obtained from all participants who agree to take part in the study.
+
+The research questions will be addressed through three separate treatments, each targeting a specific question. These treatments will be randomly assigned to three of the six cities chosen as treatment groups, with the remaining three cities serving as corresponding control groups. The operational procedure will involve creating targeted promotional emails for gym members in the treatment and control groups, presenting different promotional offers to each group.
+
+Research staff involved in the study will be trained to maintain the confidentiality of participant information and adhere to ethical guidelines for conducting research. They will be familiarized with the study's objectives, design, and promotional strategies. Staff will be responsible for monitoring the renewal rates and collecting data during the study period.
+
+Participants in the study will be rewarded with the promotional offers presented in their respective treatment or control groups. There will be no punishment for members who choose not to participate in the study or for those who refuse to renew their memberships. Participation in the study is voluntary, and members are free to opt-out at any time without any consequences.
+
+Data collection will occur during the months of May, June, and July 2023. We expect a one-month response time for each promotional offer, allowing for adequate time for participants to consider their renewal options. The research team will closely monitor the renewal rates in each group, with data analysis and evaluation of the promotional strategies taking place once the data collection period has concluded.
+
+By carefully designing the study and following the outlined procedures, the research team will be able to directly measure the performance of the gym's promotional strategies, providing actionable insights for the gym management. This information will enable the research team to offer valuable recommendations on how to optimize promotional efforts and enhance member retention rates.
+
+
+#### Brief Schedule
+
+**Authors (Xuan Song-100%)**: 
+
+This project consists of several major phases: preparation, enrollment, follow-up, analysis, and reporting. A timetable for completing the work is proposed below, along with justifications for any possible delays.
+
+Weeks 1-2: Preparation Phase
+- Obtain gym permissions
+- Finalize promotional email designs
+- Set up email delivery systems
+- Prepare data tracking tools
+
+Weeks 3-4: Enrollment Phase (Round 1)
+- Send the first round of promotional emails to participants in May 2023
+- Track membership renewals
+
+Weeks 5-6: Follow-up and Analysis Phase (Round 1)
+- Analyze collected data from the first round
+- Compare renewal rates between treatment and control groups
+- Adjust strategies if needed
+
+Weeks 7-8: Enrollment Phase (Round 2)
+- Send the second round of promotional emails in June 2023
+- Track membership renewals
+
+Weeks 9-10: Follow-up and Analysis Phase (Round 2)
+- Analyze collected data from the second round
+- Compare findings with the first round
+- Make adjustments as necessary
+
+Weeks 11-12: Enrollment Phase (Round 3)
+- Send the third round of promotional emails in July 2023
+- Track membership renewals
+
+Weeks 13-14: Follow-up, Analysis, and Reporting Phase (Final)
+- Analyze collected data from the third round
+- Consolidate findings across all rounds
+- Prepare a comprehensive report with recommendations for gym management
+
+Unexpected delays in obtaining gym permissions could impact the project start date. In the event that this occurs, the timetable will be adjusted accordingly to ensure all phases are completed. Additionally, technical issues with email delivery systems or data tracking tools might lead to postponements. In such cases, the schedule will be revised to accommodate the necessary troubleshooting and adjustments, allowing the project to continue smoothly. Furthermore, unforeseen circumstances, such as staff unavailability, have the potential to impact the analysis and reporting phases. Should this happen, extra time may be allocated to complete these tasks, so as not to compromise the overall project timeline.
+
+#### Data Collection
+
+**Authors (Xuan Song-100%)**: 
+
+In this study, researchers will collect relevant data on membership renewals for both treatment and control groups, with the primary objective of examining the impact of promotional offers on renewal rates. The independent variable in this study is the type of promotional offer, while the dependent variable is the membership renewal rate. Data will be transformed into binary variables, representing whether a participant renewed their membership or not, and data integrity measures will be applied to ensure reliable and valid research results.
+
+Other variables that may have effects, such as confounders, need to be controlled for in the study. For instance, the duration of membership, frequency of gym visits, and customer satisfaction levels can potentially influence renewal rates. By utilizing a randomized experimental comparison and conducting the experiment in six similar cities with comparable locations, researchers can effectively control for potential confounding variables. This method allows for the focus on the primary variables of interest without the need to collect additional demographic information.
+
+The data collected will be meticulously analyzed to determine the impact of different membership renewal offers on renewal rates and total revenue. By focusing on these key variables, researchers can offer gym management actionable insights into the effectiveness of their promotional strategies and guide potential improvements to their membership renewal processes. The choice of research design streamlines the data collection process, enabling the research team to concentrate on the most critical aspects of the study and ultimately deliver valuable recommendations for the gym.
+
+
+#### Data Security
+
+**Authors (Xuan Song-100%)**: 
+
+Protecting participant data is a vital aspect of this study, and researchers will adhere to strict security measures to ensure privacy and confidentiality throughout the research process.
+
+To maintain the confidentiality of the subjects, participants will be assigned unique identification numbers to anonymize their personal information and prevent any potential disclosure. During the data analysis phase, researchers will only have access to the identification numbers, ensuring that they cannot link the data to specific individuals. This will further protect participants' privacy.
+
+The methods used to maintain the security of the records will include storing all data on a secure, password-protected server with access limited to authorized research team members only. Sensitive electronic files will be encrypted to protect the data from unauthorized access or tampering. Researchers will regularly back up data to safeguard against data loss due to unforeseen circumstances. Unnecessary data will be destroyed after the study's completion, in compliance with data retention policies.
+
+For research involving human subjects, it is essential to include details on the training and certification of the research staff. All research staff involved in the study will undergo training in data security and confidentiality, as well as ethics in human subjects research. They will be required to complete the necessary certifications like Certified in Data Protection (CDP) to ensure they adhere to the highest standards in data protection and ethical research practices.
+
+By following these security measures and complying with all applicable data protection regulations and ethical guidelines, researchers will maintain participant trust and ensure a high standard of research quality.
+
+
+#### Variables
+
+
+##### Outcomes (Dependent Variables)
+
+
+**Authors (Yiqi Wang-100%)**: 
+
+Outcomes (Dependent Variables): In this investigation, membership renewal rates at the gym will serve as the dependent variable. Our dependent variable will be the decision of each member to renew their gym membership each year. It will be a binary outcome since our research question concerns the impact of various bonus renewal offers, promotions on free training sessions and membership renewal frameworks on retention rates. This effect will be evaluated by obtaining participants' responses after the experiment. By tracking members' responses to different bonus renewal offers, promotions on free training sessions and membership renewal frameworks, we may learn how these incentives affect the proportions with which people renew their gym memberships.
+
+##### Treatments (Independent Variables)
+
+**Authors (Yiqi Wang-100%)**: 
+
+Treatments (Independent Variables):  (1) Membership length (14 months vs. 12 months), (2) number of free sessions with professional trainers (5 vs. 3); (3) number of free sessions with professional trainers (3 vs. 0)and are the independent factors in this study. The 14-month and 12-month plans are experiments to see whether extending the membership period affects renewal rates. The purpose of the three and five free sessions with certified trainers is to analyze the effect of training session incentives on membership renewal rates. 
+
+##### Other Variables
+
+**Authors (Yiqi Wang-100%)**: 
+
+Other Variables: Participants' demographic information, including age, education, income, employment, health, family status, and future relocation intentions, could potentially be considered as other variables, but we will not collect these information for the purpose of conducting this research, since we don't plan to segment gym members into different subgroups.
+
+
+
+### Statistical Analysis Plan  
+
+**Authors (Yiqi Wang-100%)**: 
+
+A proportion test is a statistical test used to determine the significance of a difference between two or more proportions. Gym membership renewal rates are being compared between a treatment group (offered a 14-month renewal) and a control group (offered a 12-month renewal) in this research, and for 5 or 3 free sessions and 3 or 0 free sessions will also be using proportion tests. 
+This study aims to analyze the impact of plan renewal bonuses on customers' choices. In particular, we will examine whether or not increasing the number of free sessions with experienced trainers 1) from three to five, and 2) from zero to three, result in a higher percentage of membership renewals. This will be achieved by treating the free sessions offers as independent variables: 1) the "treatment group" will get five free sessions, while the "control group" will receive three; and 2) the "treatment group" will get three free sessions, while the "control group" will receive none. The renewal decision of an individual member will serve as our dependent variable. We expect 1) the renewal rate for the group that received five free sessions with professional trainers to be higher than that for the group that received three free sessions with professional trainers (our null Hypothesis), and 2) the renewal rate for the group that received three free sessions with professional trainers to be higher than that for the group that received no free sessions with professional trainers (our null Hypothesis). Our study aims to learn how different bonus renewal offers and promotions on free training sessions affect members' decisions to keep their gym memberships by testing the research above questions and hypotheses.
+
+
+
+### Sample Size and Statistical Power
+
+**Authors (Jack Zhang-100%)**: 
+
+First, we will need to estimate the effect size of our course of action. For the first, second and third research question, the effect size would be the observed differences in proportions associated with the treatment. An effect size needs to be large enough to be considered meaningful in our research study. For the first, second and third research question, we can assume 15% increases in proportions as the effect size. 
+
+We will also assume the sample size in the treatment group and control group. The sample needs to be large enough to be a reasonably good representative of the population and help arrive at conclusions that are reliable enough for addressing the research questions to the desired degree of precision. The size in the treatment and control group also needs to be in close proximity to reduce bias. We can assume we are able to select 200 in the treatment group and 220 in the control group since the gym locations in metropolitan areas would have a much bigger membership pool. The power of our test if we're interested in being able to detect a 15% effect size with 0.05 significance is about 45.6%. (please see below section in Simulated Studies for more details)
+
+
+### Possible Recommendations
+
+**Authors (Sterben Shi, Xuan Song, Yiqi Wang, Yisong Wang, Jack Zhang--20% each)**: 
+
+#For each research question, provide a short description of the possible recommendations you will make if a) the null hypothesis is not rejected, and b) the null hypothesis is rejected.
+
+After assuming the sample size of 200 in the treatment group and 220 in the control group. The power of our test if we're interested in being able to detect a 15% effect size with 0.05 significance is about 45.6%. As the sample size increases, the statistical power increases, denoting that it increases the likelihood of detecting real differences or effects in the data. On the contrary, when we assume a smaller sample size, the statistical power decreases. 
+A larger sample size generally leads to a higher statistical power, assuming all other factors remain constant. Therefore, we recommend the gym to draw as many samples as possible to make a more precise decision.
+
+For the first research question, when there is a higher proportions of renewal in the treatment group vs. the control group (0.78,0.22), then we will obtain a meaningful and significant effect (as the p-value of the test is very small), then we can reject the null hypothesis. On the contrary, the null hypothesis is not rejected when when the proportions of renewal between the treatment group vs. the control group is very close (0.54,0.46).
+For the second research question, when there is a higher proportions of renewal in the treatment group vs. the control group (0.67,0.33), then we will obtain a meaningful and significant effect (as the p-value of the test is very small), then we can reject the null hypothesis. On the contrary, the null hypothesis is not rejected when when the proportions of renewal between the treatment group vs. the control group is very close (0.51,0.49).
+For the third research question, when there is a higher proportions of renewal in the treatment group vs. the control group (0.82,0.18), then we will obtain a meaningful and significant effect (as the p-value of the test is very small), then we can reject the null hypothesis. On the contrary, the null hypothesis is not rejected when when the proportions of renewal between the treatment group vs. the control group is very close (0.54,0.46).
+
+
+### Limitations and Uncertainties
+
+**Authors (Xuan Song-50%, Jack Zhang-50%)**: 
+
+This study presents some limitations and uncertainties that should be acknowledged when interpreting the results. First, the randomized control study design does not require the division of the population into subgroups, such as age, education, income, occupation, physical condition, recent family changes, and relocation plans. Although this design choice streamlines data collection, it could potentially introduce confounding variables that may influence membership renewal decisions.
+
+In addition, the sampled gym facilities may have different demographics due to their varying locations in different metropolitan areas. This could result in the sampled population having different representations in terms of income, age, occupation, and other factors. Furthermore, members who frequently travel between cities might be mistakenly assigned to one group while actually belonging to another.
+
+External factors, such as economic conditions, lifestyle preferences, or competing fitness alternatives, could also impact the decision-making process of gym members. These factors may influence renewal decisions independently of the promotions being offered, making it difficult to isolate the effects of the promotional offers.
+
+Certain aspects of the research questions may not be fully addressed. The study may not account for individual preferences and motivations for renewing gym memberships or capture long-term trends and patterns in membership renewal decisions due to its short duration. Additionally, the results may not provide insights into the effectiveness of promotional strategies among different subgroups, such as age, income, or occupation, due to the lack of demographic information collected.
+
+The study may also be affected by response bias. Members who are satisfied with their gym experience or have a strong intention to renew their memberships might be more likely to participate in the study, skewing the results in favor of the treatment group. Furthermore, the research timeline, which spans May, June, and July 2023, may introduce seasonal biases. Gym usage and renewal decisions could be influenced by vacation plans, weather conditions, or New Year's resolutions during these months.
+
+When interpreting the results, several precautions should be taken. It is essential to consider the potential impact of unmeasured confounding variables, the presence of response bias, and seasonal biases in the data. Finally, the results may not be generalizable to other locations or gyms with different demographic profiles. To enhance the generalizability of the findings, future research could extend the study to include a more diverse range of locations and demographics and consider collecting more detailed demographic data to minimize the impact of potential confounders.
+
+
+## Part 2:  Simulated Studies
+
+**Authors (Jack Zhang-50%, Yiqi Wang-50%)**: 
+
+
+```{r }
+# If your research questions are part of a single experiment, then simulate your data here.
+
+# We fixed the random seed to ensure that the simulation results can be repeated.
+# We assumed that the effect size is 0.15 (15% increase),the mean is 200, the standard deviation is 20, and set the sample size to be 200 for each group. 
+# Assuming that the number of samples collected by all 6 groups follows N(200,20^2), rounded to an integer.
+
+
+library(pwr)
+set.seed(2023)
+N = round(rnorm(6,200,20),0)
+rm(list = ".Random.seed")
+N.mat = matrix(N,3,2,T)
+colnames(N.mat) = c("Treatment","Control")
+rownames(N.mat) = c("Research Q1","Research Q2","Research Q3")
+N.mat
+install.packages("pwr")
+library(pwr)
+pwr.2p2n.test(h = 0.15, n1=200, n2=220,sig.level = 0.05, alternative = "greater")
+
+# The "pwr.2p2n.test" function from the pwr package helps us to conduct a two-sample test for proportions, with unequal sample sizes. The function returns the required sample size to achieve the specified power, assuming the effect size is 0.15 and the alternative hypothesis is that the treatment group is more effective than the control group.
+# Assuming we are able to survey 200 in the treatment group and 220 in the control group. The power of our test if we're interested in being able to detect a 15% effect size with 0.05 significance is about 45.6%.
+# The output of the code is the matrix N.mat, which shows the number of participants in each group for each research question (i.e., For Research Q1, 198 in the Treatment group and 180 in the control group; For Research Q2, 162 in the Treatment group and 196 in the control group; For Research Q3, 187 in the Treatment group and 222 in the control group). 
+
+```
+
+### Research Question 1:
+
+#### Scenario 1:  No Effect
+
+**Authors (Jack Zhang-50%, Yiqi Wang-50%)**: 
+
+
+##### Simulation
+
+```{r q1_scenario1_simulation}
+## no effect
+## The treatment group: 14-months membership, the expected proportion of membership renewals is 54%.
+## The control group: 12-months membership, the expected proportion of membership renewals is 53%.
+set.seed(2023)
+treat = c(rep("Treatment",198), rep("Control",180))
+renewal = c(sample(c("Y","N"),198,replace = T,prob=c(0.54,0.46)),sample(c("Y","N"),180,replace = T,prob=c(0.53,0.47)))
+table2 = table(treat,renewal)
+prop.test(x = table2[2:1,2], n = rowSums(table2)[2:1], alternative = "greater")
+
+result = c()
+for(i in 1:1000){
+  set.seed(2023+i)
+  treat = c(rep("Treatment",198), rep("Control",180))
+  renewal = c(sample(c("Y","N"),198,replace = T,prob=c(0.54,0.46)),sample(c("Y","N"),180,replace = T,prob=c(0.53,0.47)))
+  result = rbind(result,as.vector(table(treat,renewal)/c(180,198)))
+}
+CI = t(apply(result, 2, quantile,probs=c(0.025,0.975)))
+res = cbind(expected=c(0.47, 0.46, 0.53, 0.54), CI)
+rownames(res) = c("Control-No renewal", "Treatment-No renewal", "Control-Renewal", "Treatment-Renewal")
+colnames(res) = c("Expected", "95% CI lower", "95% CI upper")
+res
+```
+
+##### Analysis
+
+```{r q1_scenario1_analysis}
+#The result of prop.test() is the output of a two-sample test for equality of proportions with continuity correction. It compares the proportion of membership renewals in the treatment group (14-months membership, expected proportion of renewals is 54%) to the proportion of renewals in the control group (12-months membership, expected proportion of renewals is 53%).
+
+#The p-value of 0.2415 suggests that there is not enough evidence to reject the null hypothesis that the proportion of renewals in the treatment group is not greater than the proportion in the control group, at a significance level of 0.05. The confidence interval (-0.04850204, 1.00000000) is very wide and contains both positive and negative values, indicating that we have very little information about the difference in proportions between the two groups. Furthermore, the mean effect in our simulated data is negligible, since we are only looking at 1% increase for the expected proportion of renewals.
+
+#In conclusion, the result suggests that there is no significant difference in the proportion of membership renewals between the treatment and control groups, and we cannot confidently claim that the 14-month membership in the treatment group increases the proportion of renewals compared to the 12-month membership in the control group.
+```
+
+
+
+#### Scenario 2:  An Expected Effect
+
+**Authors (Jack Zhang-50%, Yiqi Wang-50%)**: 
+
+
+##### Simulation
+
+```{r q1_scenario2_simulation}
+## n.treat = 198, n.contol = 180
+## An expected effect
+## The treatment group: 14-months membership, the expected proportion of membership renewals is 78%.
+## The control group: 12-months membership, the expected proportion of membership renewals is 53%.
+set.seed(2023)
+treat = c(rep("Treatment",198), rep("Control",180))
+renewal = c(sample(c("Y","N"),198,replace = T,prob=c(0.78,0.22)),sample(c("Y","N"),180,replace = T,prob=c(0.53,0.47)))
+table1 = table(treat,renewal)  # table
+prop.test(x = table1[2:1,2], n = rowSums(table1)[2:1], alternative = "greater") # test  #大 greater 小 less 等于 two.sided
+result = c()
+for(i in 1:1000){
+  set.seed(2023+i)
+  treat = c(rep("Treatment",198), rep("Control",180))
+  renewal = c(sample(c("Y","N"),198,replace = T,prob=c(0.78,0.22)),sample(c("Y","N"),180,replace = T,prob=c(0.53,0.47)))
+  result = rbind(result,as.vector(table(treat,renewal)/c(180,198)))
+}
+CI = t(apply(result, 2, quantile,probs=c(0.025,0.975)))
+res = cbind(expected=c(0.47, 0.22, 0.53, 0.78), CI)
+rownames(res) = c("Control-No renewal", "Treatment-No renewal", "Control-Renewal", "Treatment-Renewal")
+colnames(res) = c("Expected", "95% CI lower", "95% CI upper")
+res
+```
+
+##### Analysis
+
+```{r q1_scenario2_analysis}
+#The result of prop.test() is the output of a two-sample test for equality of proportions with continuity correction. It compares the proportion of membership renewals in the treatment group (14-months membership, expected proportion of renewals is 78%) to the proportion of renewals in the control group (12-months membership, expected proportion of renewals is 53%).
+
+#Since the alternative hypothesis is that the proportion of membership renewals in the treatment group is greater than the proportion in the control group, a false positive would occur if we rejected the null hypothesis even though there is no actual difference in the proportion of renewals between the groups. A true positive would occur if we correctly reject the null hypothesis and conclude that there is a difference in the proportion of renewals between the groups.
+
+#Similarly, a false negative would occur if we fail to reject the null hypothesis even though there is a difference in the proportion of renewals between the groups. A true negative would occur if we correctly fail to reject the null hypothesis and conclude that there is no difference in the proportion of renewals between the groups.
+
+#The result of the prop.test() indicates that there is strong evidence to reject the null hypothesis of equality of proportions between the treatment and control groups. The p-value is very small (p < 0.001) which suggests that the observed difference between the two groups is unlikely to have occurred by chance alone. The alternative hypothesis of greater is accepted, meaning that the proportion of membership renewals in the treatment group is significantly greater than that in the control group. 
+#The 95% confidence interval for the difference in proportions ranges from 0.205 to 1, indicating that the true difference in proportions lies within this interval with 95% confidence. The sample estimates show that the proportion of membership renewals in the treatment group is 0.777, while it is 0.489 in the control group.
+
+#Since the p-value of the test is very small (p-value = 4.804e-09), we can reject the null hypothesis and conclude that the treatment group has a higher proportion of membership renewals than the control group. Therefore, in this case:
+
+#True positive: We correctly reject the null hypothesis and conclude that the treatment group has a higher proportion of membership renewals than the control group.
+#False negative: None. We correctly reject the null hypothesis and conclude that the treatment group has a higher proportion of membership renewals than the control group when it actually does.
+#False positive: The probability of a false positive is equal to the significance level (alpha), which is usually set at 0.05. In this case, since the p-value is much smaller than 0.05, the probability of a false positive is very small.
+#True negative: None. We correctly reject the null hypothesis and conclude that there is a difference in the proportion of membership renewals between the treatment group and the control group.
+
+```
+
+
+
+### Research Question 2:
+
+#### Scenario 1:  No Effect
+
+**Authors (Jack Zhang-50%, Yiqi Wang-50%)**: 
+
+
+##### Simulation
+
+```{r q2_scenario1_simulation}
+## no effect
+## The treatment group: 5 free sessions, the expected proportion of membership renewals is 51%.
+## The control group: 3 free sessions, the expected proportion of membership renewals is 49%.
+set.seed(2023)
+treat = c(rep("Treatment",162), rep("Control",196))
+renewal = c(sample(c("Y","N"),162,replace = T,prob=c(0.51,0.49)),sample(c("Y","N"),196,replace = T,prob=c(0.49,0.51)))
+table4 = table(treat,renewal)
+prop.test(x = table4[2:1,2], n = rowSums(table4)[2:1], alternative = "greater")
+
+result = c()
+for(i in 1:1000){
+  set.seed(2023+1000+i)
+  treat = c(rep("Treatment",162), rep("Control",196))
+  renewal = c(sample(c("Y","N"),162,replace = T,prob=c(0.51,0.49)),sample(c("Y","N"),196,replace = T,prob=c(0.49,0.51)))
+  result = rbind(result,as.vector(table(treat,renewal)/c(196,162)))
+}
+CI = t(apply(result, 2, quantile,probs=c(0.025,0.975)))
+res = cbind(expected=c(0.51, 0.49, 0.49, 0.51), CI)
+rownames(res) = c("Control-No renewal", "Treatment-No renewal", "Control-Renewal", "Treatment-Renewal")
+colnames(res) = c("Expected", "95% CI lower", "95% CI upper")
+res
+```
+
+##### Analysis
+
+```{r q2_scenario1_analysis}
+
+#The result of the prop.test() is the output of a two-sample test for equality of proportions with continuity correction. The test is performed to compare the proportion of membership renewals between the treatment group and the control group in an experiment where the treatment group received 5 free sessions and the control group received 3 free sessions.
+
+#The test result shows that the p-value is 0.3963, which is greater than the significance level of 0.05. This means that we do not have sufficient evidence to reject the null hypothesis, which is that the proportion of membership renewals in the treatment group is not greater than the proportion of renewals in the control group. The 95% confidence interval for the difference in proportions ranges from -0.073 to 1, indicating that we cannot rule out the possibility that there is no difference in the proportions of membership renewals between the two groups.
+
+#The sample estimates of the proportion of renewals are 0.5247 for the treatment group and 0.5051 for the control group. This suggests that the proportion of renewals is slightly higher in the treatment group than in the control group, but the difference is not statistically significant based on the test result.
+
+#The result is a matrix that shows the expected proportion of membership renewals and their corresponding 95% confidence intervals (CI) for each of the four groups: Control-No renewal, Treatment-No renewal, Control-Renewal, and Treatment-Renewal.
+
+#The "Expected" column shows the expected proportion of membership renewals for each group, which are the same as the ones specified in the original code: 51% for the Treatment-Renewal group and 49% for the other three groups.
+
+#The "95% CI lower" and "95% CI upper" columns show the lower and upper bounds of the 95% CI for the proportion of membership renewals in each group, respectively. The CI is calculated based on 1000 simulations of the experiment where the proportion of renewals is estimated for each simulation. The bounds of the CI represent the range of values within which we can be 95% confident that the true proportion of renewals lies.
+
+#Looking at the matrix, we can see that the CIs for the proportion of renewals in each group overlap with each other, indicating that there is no statistically significant difference in the proportion of renewals between the Treatment and Control groups. This is consistent with the p-value obtained from the prop.test() in the original code, which showed that there was no significant difference between the groups at the 5% significance level.
+
+#Assuming a cutoff of 0.5 (i.e., if the estimated probability of renewal is greater than 0.5, the outcome is classified as a positive renewal), and based on the expected proportion of renewals in the treatment and control groups, we can estimate the following:
+
+#False positives: individuals in the treatment group who were predicted to renew (i.e., estimated probability > 0.5), but did not actually renew. The expected proportion of false positives in the treatment group is (1 - 0.51) * 162 = 79.38, or about 79.38 / 162 * 100% = 48.98%.
+#False negatives: individuals in the control group who were predicted not to renew (i.e., estimated probability <= 0.5), but actually did renew. The expected proportion of false negatives in the control group is 0.49 * 196 = 96.04, or about 96.04 / 196 * 100% = 48.98%.
+#True positives: individuals in the treatment group who were predicted to renew and actually did renew. The expected proportion of true positives in the treatment group is 0.51 * 162 = 82.62, or about 82.62 / 162 * 100% = 50.99%.
+#True negatives: individuals in the control group who were predicted not to renew and actually did not renew. The expected proportion of true negatives in the control group is (1 - 0.49) * 196 = 100.04, or about 100.04 / 196 * 100% = 51.02%.
+
+
+```
+
+
+
+#### Scenario 2:  An Expected Effect
+
+**Authors (Jack Zhang-50%, Yiqi Wang-50%)**: 
+
+
+##### Simulation
+
+```{r q2_scenario2_simulation}
+## n.treat = 162, n.contol = 196
+## An expected effect
+## The treatment group: 5 free sessions, the expected proportion of membership renewals is 67%.
+## The control group: 3 free sessions, the expected proportion of membership renewals is 49%.
+set.seed(2023)
+treat = c(rep("Treatment",162), rep("Control",196))
+renewal = c(sample(c("Y","N"),162,replace = T,prob=c(0.67,0.33)),sample(c("Y","N"),196,replace = T,prob=c(0.49,0.51)))
+table3 = table(treat,renewal)
+prop.test(x = table3[2:1,2], n = rowSums(table3)[2:1], alternative = "greater")
+
+result = c()
+for(i in 1:1000){
+  set.seed(2023+1000+i)
+  treat = c(rep("Treatment",162), rep("Control",196))
+  renewal = c(sample(c("Y","N"),162,replace = T,prob=c(0.67,0.33)),sample(c("Y","N"),196,replace = T,prob=c(0.49,0.51)))
+  result = rbind(result,as.vector(table(treat,renewal)/c(196,162)))
+}
+CI = t(apply(result, 2, quantile,probs=c(0.025,0.975)))
+res = cbind(expected=c(0.51, 0.33, 0.49, 0.67), CI)
+rownames(res) = c("Control-No renewal", "Treatment-No renewal", "Control-Renewal", "Treatment-Renewal")
+colnames(res) = c("Expected", "95% CI lower", "95% CI upper")
+res
+```
+
+##### Analysis
+
+```{r q2_scenario2_analysis}
+#The result of the prop.test() indicates that there is evidence to reject the null hypothesis of no difference in the proportions of membership renewals between the treatment and control groups in favor of the alternative hypothesis that the proportion of renewals in the treatment group is greater than the proportion of renewals in the control group.
+
+#Specifically, the p-value is less than the significance level of 0.05, indicating that the result is statistically significant. The confidence interval for the difference in proportions also does not contain zero, further supporting the rejection of the null hypothesis.
+
+#The sample estimates suggest that the proportion of membership renewals in the treatment group is higher (0.654321) than that in the control group (0.505102), which is consistent with the expected effect size.
+
+#The result shows the expected proportion of membership renewals and the 95% confidence intervals for four different groups, based on a simulation with 1000 iterations.
+
+#Control-No renewal: the expected proportion of membership renewals for the control group with no free sessions.
+#Treatment-No renewal: the expected proportion of membership renewals for the treatment group with no free sessions.
+#Control-Renewal: the expected proportion of membership renewals for the control group with 3 free sessions.
+#Treatment-Renewal: the expected proportion of membership renewals for the treatment group with 5 free sessions.
+#For each group, the expected proportion of membership renewals is provided in the "Expected" column. The "95% CI lower" and "95% CI upper" columns provide the lower and upper bounds of the 95% confidence interval, respectively. This means that we are 95% confident that the true proportion of membership renewals for each group lies within the range of the confidence interval.
+
+#We can see that the expected proportion of membership renewals for the treatment group with 5 free sessions (Treatment-Renewal) is higher than the other groups, including the control group with 3 free sessions (Control-Renewal). However, the confidence interval for Treatment-Renewal is relatively wide, indicating more uncertainty in the estimated proportion due to the smaller sample size. Overall, the result suggests that offering 5 free sessions may be effective in increasing membership renewals compared to offering 3 free sessions or no free sessions, but more data may be needed to confirm this.
+
+
+```
+
+### Research Question 3:
+
+#### Scenario 1:  No Effect
+
+**Authors (Jack Zhang-50%, Yiqi Wang-50%)**: 
+
+
+##### Simulation
+
+```{r q3_scenario1_simulation}
+## no effect
+## The treatment group: 3 free sessions, the expected proportion of membership renewals is 54%.
+## The control group: 0 free sessions, the expected proportion of membership renewals is 55%.
+set.seed(2023)
+treat = c(rep("Treatment",187), rep("Control",222))
+renewal = c(sample(c("Y","N"),187,replace = T,prob=c(0.54,0.46)),sample(c("Y","N"),222,replace = T,prob=c(0.55,0.45)))
+table6 = table(treat,renewal)
+prop.test(x = table6[2:1,2], n = rowSums(table6)[2:1], alternative = "greater")
+
+result = c()
+for(i in 1:1000){
+  set.seed(2023+2000+i)
+  treat = c(rep("Treatment",187), rep("Control",222))
+  renewal = c(sample(c("Y","N"),187,replace = T,prob=c(0.54,0.46)),sample(c("Y","N"),222,replace = T,prob=c(0.55,0.45)))
+  result = rbind(result,as.vector(table(treat,renewal)/c(222,187)))
+}
+CI = t(apply(result, 2, quantile,probs=c(0.025,0.975)))
+res = cbind(expected=c(0.45, 0.46, 0.55, 0.54), CI)
+rownames(res) = c("Control-No renewal", "Treatment-No renewal", "Control-Renewal", "Treatment-Renewal")
+colnames(res) = c("Expected", "95% CI lower", "95% CI upper")
+res
+```
+
+##### Analysis
+
+```{r q3_scenario1_analysis}
+#The result of the hypothesis test suggests that there is not enough evidence to reject the null hypothesis that the proportion of membership renewals in the treatment group is equal to or less than the proportion of membership renewals in the control group. The p-value of 0.4978 is greater than the commonly used significance level of 0.05, which means that we cannot reject the null hypothesis at this level of significance. The confidence interval for the difference in proportions (-0.08131052, 1.00000000) includes zero, which also supports the idea that the difference in proportions could be due to chance alone. In other words, there is no statistically significant evidence to suggest that the treatment has an effect on membership renewals in this case.
+
+#The result shows the expected proportion of membership renewals and no-renewals in the control and treatment groups, along with the corresponding 95% confidence intervals. The expected proportions are consistent with the original design of the experiment, where the expected proportion of renewals in the treatment group was 0.54 and in the control group was 0.55. The confidence intervals indicate the range of plausible values for the true proportion of renewals and no-renewals in each group.
+
+#For example, the 95% confidence interval for the proportion of renewals in the treatment group ranges from 0.47 to 0.61, indicating that we can be 95% confident that the true proportion of renewals in the treatment group is within this range. Similarly, the 95% confidence interval for the proportion of no-renewals in the control group ranges from 0.38 to 0.51, indicating that we can be 95% confident that the true proportion of no-renewals in the control group is within this range.
+
+#Overall, the result suggests that the experiment did not provide strong evidence to reject the null hypothesis that the proportion of renewals in the treatment group is greater than or equal to the proportion of renewals in the control group, as indicated by the p-value of the one-tailed proportion test.
+
+#To calculate the percentages of false positives, true negatives, false negatives, and true positives, we need to define the groups as follows:
+
+#Group 1: Control group (no free sessions), expected proportion of renewals is 55%
+#Group 2: Treatment group (3 free sessions), expected proportion of renewals is 54%
+#Renewal = "Y": membership renewal
+#Renewal = "N": membership not renewed
+#Using these definitions, we can construct the following confusion matrix based on the expected and observed proportions of renewals:
+
+                    #Predicted Not Renewed	Predicted Renewed
+#Actual Not Renewed	True Negative (TN)	False Positive (FP)
+#Actual Renewed	False Negative (FN)	True Positive (TP)
+#Using the information from the result matrix, we can calculate the percentages as follows:
+
+#True Negatives (TN): The actual proportion of non-renewals in the control group is 0.55, and the lower bound of the 95% confidence interval for this proportion is 0.38. Therefore, the percentage of true negatives is (0.38/0.55)*100 = 69.1%.
+#False Positives (FP): The actual proportion of renewals in the control group is 1-0.55 = 0.45, and the upper bound of the 95% confidence interval for this proportion is 0.51. Therefore, the percentage of false positives is (0.51/0.45)*100 = 113.3%.
+#False Negatives (FN): The actual proportion of renewals in the treatment group is 0.54, and the lower bound of the 95% confidence interval for this proportion is 0.47. Therefore, the percentage of false negatives is (1-0.47/0.54)*100 = 12.96%.
+#True Positives (TP): The actual proportion of renewals in the treatment group is 0.54, and the upper bound of the 95% confidence interval for this proportion is 0.61. Therefore, the percentage of true positives is (0.54/0.61)*100 = 88.52%.
+#It is worth noting that the percentage of false positives is greater than 100% because the upper bound of the confidence interval for the control group's renewal proportion is higher than the expected proportion. This indicates that the treatment group's observed renewal proportion is not significantly different from the control group's expected proportion, but it could still be higher than the upper bound of the confidence interval.
+```
+
+
+
+#### Scenario 2:  An Expected Effect
+
+**Authors (Jack Zhang-50%, Yiqi Wang-50%)**: 
+
+
+```{r }
+# If your research questions are part of a single experiment, then simulate your data here.
+
+
+```
+
+
+##### Simulation
+
+```{r q3_scenario2_simulation}
+## n.treat = 187, n.contol = 222
+## An expected effect
+## The treatment group: 3 free sessions, the expected proportion of membership renewals is 82%.
+## The control group: 0 free sessions, the expected proportion of membership renewals is 55%.
+set.seed(2023)
+treat = c(rep("Treatment",187), rep("Control",222))
+renewal = c(sample(c("Y","N"),187,replace = T,prob=c(0.82,0.18)),sample(c("Y","N"),222,replace = T,prob=c(0.55,0.45)))
+table5 = table(treat,renewal)
+prop.test(x = table5[2:1,2], n = rowSums(table5)[2:1], alternative = "greater")
+
+result = c()
+for(i in 1:1000){
+  set.seed(2023+2000+i)
+  treat = c(rep("Treatment",187), rep("Control",222))
+  renewal = c(sample(c("Y","N"),187,replace = T,prob=c(0.82,0.18)),sample(c("Y","N"),222,replace = T,prob=c(0.55,0.45)))
+  result = rbind(result,as.vector(table(treat,renewal)/c(222,187)))
+}
+CI = t(apply(result, 2, quantile,probs=c(0.025,0.975)))
+res = cbind(expected=c(0.45, 0.18, 0.55, 0.82), CI)
+rownames(res) = c("Control-No renewal", "Treatment-No renewal", "Control-Renewal", "Treatment-Renewal")
+colnames(res) = c("Expected", "95% CI lower", "95% CI upper")
+res
+```
+
+##### Analysis
+
+```{r q3_scenario2_analysis}
+#The result of the code is a hypothesis test comparing the proportion of membership renewals in the treatment group (which received 3 free sessions with an expected renewal rate of 82%) and the control group (which did not receive any free sessions with an expected renewal rate of 55%).
+
+#The p-value of the test is very small (5.4e-10), which means that the proportion of renewals in the treatment group is significantly greater than that of the control group. The alternative hypothesis is that the proportion of renewals in the treatment group is greater than that of the control group. The 95% confidence interval for the difference in proportions ranges from 0.22 to 1.00, which is entirely above 0, supporting the conclusion that the proportion of renewals in the treatment group is greater. The sample estimate for the proportion of renewals in the treatment group is 0.81, which is substantially higher than the proportion in the control group, which is 0.51.
+
+#The result tells us the expected proportion of membership renewals and the corresponding 95% confidence intervals for each group (control and treatment) and each condition (no renewal or renewal).
+
+#For example, the expected proportion of membership renewals in the control group with no renewal is 0.45, with a 95% confidence interval of 0.38 to 0.51. This means that if we were to repeat the experiment many times, we would expect the proportion of membership renewals in the control group with no renewal to be around 0.45, and there is a 95% chance that the true proportion lies between 0.38 and 0.51.
+
+#Similarly, the expected proportion of membership renewals in the treatment group with renewal is 0.82, with a 95% confidence interval of 0.76 to 0.87. This means that we can be highly confident that the true proportion of membership renewals in the treatment group with renewal is between 0.76 and 0.87.
+
+#The result also shows that the expected proportion of membership renewals is higher in the treatment group than in the control group for both conditions (no renewal and renewal), and the confidence intervals for both conditions do not overlap. This suggests that the treatment is effective in increasing the proportion of membership renewals compared to the control group.
+
+#In the current scenario, we are comparing the proportions of membership renewals between a treatment group and a control group, and we are interested in determining whether there is evidence of a significant difference between the two groups. The hypothesis being tested is whether the proportion of renewals in the treatment group is greater than the proportion of renewals in the control group.
+
+#The p-value obtained from the proportion test (5.4e-10) is very small, which suggests strong evidence against the null hypothesis of equal proportions. This means that we can reject the null hypothesis and conclude that there is evidence of a significant difference between the treatment and control groups in terms of membership renewal rates.
+
+#The confidence intervals obtained from the bootstrap procedure indicate the range of values that the true proportion of renewals in each group is likely to fall within, based on the observed data. These intervals do not provide information about false positives, true negatives, false negatives, or true positives, as these concepts are not applicable in this scenario.
+```
+
+
+## References
+
+**Authors (Sterben Shi-100%)**: 
+
+1.Mintel reports: Consumer Market Analysis. Mintel.com. (n.d.). https://reports-mintel-com.ezproxy.cul.columbia.edu/display/1175037/?fromSearch=%3Ffreetext%3Deffect%2520of%2520membership%2520free%2520trial%26resultPosition%3D1
+
+2.Journal of education and learning,Leisure Involvement and Happiness Levels of Individuals Having Fitness Center Membership, 11/1/2019, ISSN: 1927-5250, Volume 8, Issue 6, p. 140. https://www.ccsenet.org/journal/index.php/jel/article/view/0/41182
+3.Tatiana Homonoff, Barton Willage, Alexander Willén,Rebates as incentives: The effects of a gym membership reimbursement program,Journal of Health Economics, Volume 70,2020,102285,ISSN 0167-6296,https://doi.org/10.1016/j.jhealeco.2019.102285.
+
+4.Kirsten I.M. Rohde, Willem Verbeke,We like to see you in the gym—A field experiment on financial incentives for short and long term gym attendance,Journal of Economic Behavior & Organization,Volume 134,2017,Pages 388-407,ISSN 0167-2681,https://www.sciencedirect.com/science/article/pii/S0167268116302943
+
+5.Free gym sessions offered to help nurses unwind after long shifts. (2015). Nursing Standard (2014+), 29(51), 7. doi:https://doi.org/10.7748/ns.29.51.7.s3
+
+6.Higgerson J, Halliday E, Ortiz-Nunez A, et alImpact of free access to leisure facilities and community outreach on inequalities in physical activity: a quasi-experimental studyJ Epidemiol Community Health 2018;72:252-258.
+
+7.Rabiee, F., Robbins, A., & Khan, M. (2015). Gym for Free: The short-term impact of an innovative public health policy on the health and wellbeing of residents in a deprived constituency in Birmingham, UK. Health Education Journal, 74(6), 691–704. https://doi-org.ezproxy.cul.columbia.edu/10.1177/0017896914553957
+
+8.Sobreiro, P., Guedes-Carvalho, P., Santos, A., Pinheiro, P., & Gonçalves, C. (2021). Predicting Fitness Centre Dropout. International journal of environmental research and public health, 18(19), 10465. https://doi.org/10.3390/ijerph181910465
+
