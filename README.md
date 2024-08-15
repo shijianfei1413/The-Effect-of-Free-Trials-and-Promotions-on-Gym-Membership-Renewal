@@ -22,7 +22,7 @@ This repository contains several key documents that provide detailed insights in
 
 1. **Final Project Presentation (PPTX)**
    - This PowerPoint presentation summarizes the research project, including the background, research questions, methodology, key findings, and conclusions. It's an excellent starting point to get a high-level overview of the project.
-   - **[View the Presentation](path-to-your-presentation-file)**
+   - **[View the Presentation](https://github.com/shijianfei1413/The-Effect-of-Free-Trials-and-Promotions-on-Gym-Membership-Renewal/blob/dca4ff44e566eb25a4d0b9090beb992cf5eeef6b/Final%20Project%20Presentation.pptx)**
 
 2. **R Markdown File (RMD)**
    - The R Markdown file contains the complete code and analysis conducted for this study. It provides step-by-step details on data processing, statistical tests, and results. Users interested in the technical aspects and reproducibility of the study should explore this file.
